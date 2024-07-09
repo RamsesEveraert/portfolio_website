@@ -1,0 +1,50 @@
+#Showcase
+{
+    color: var(--primaryColor);
+    font-size: 2rem;
+    margin-top: 40px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.projectDetails 
+{
+    width: 100%;
+    background: var(--cardBackground);
+    padding: 2%;
+    border-radius: 10px;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: row;
+    align-items: center; 
+    height: 100%; 
+}
+
+.projectGif
+ {
+    margin: 1%;
+    width: 100%;
+    height: auto;
+    border-radius: 2%;
+    object-fit:scale-down;
+}
+
+.projectText 
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.projectText h1, .projectText h2 
+{
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: var(--primaryColor);
+}
+
+.projectText p 
+{
+    font-size: 1rem;
+    line-height: 1.6;
+}
+

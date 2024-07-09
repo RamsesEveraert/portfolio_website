@@ -1,0 +1,56 @@
+#aboutMe, 
+#profile,
+#projectGrid
+{
+    background:  var(--cardBackground);
+    background-position: left;
+    padding: 2% 2% 2% 2%;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+}
+
+.aboutMeImage 
+{
+    border-radius: 4%; 
+    object-fit: cover;
+    margin-bottom: 3%;
+}
+
+.aboutMeText
+{
+    font-size: large;
+    text-align: justify;
+}
+
+.skills-section h1 
+{
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: var(--primaryColor);
+}
+.skills-section .skill-category 
+{
+    margin-bottom: 30px;
+ }
+.skills-section .skill-category h4 
+{
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: var(--primaryColor);
+}
+.skills-section .fas 
+{
+    margin-right: 10px;
+    color: var(--primaryColor);
+}
+.skills-section .info 
+{
+    font-weight: 600;
+}
+
+.info
+{
+    font-weight: bold;
+    text-transform: uppercase;
+    display: inline-block;
+    width: 120px;
+}

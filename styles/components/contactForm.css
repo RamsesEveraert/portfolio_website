@@ -1,0 +1,38 @@
+#contact-form 
+{
+    background-color: var(--cardBackground);
+    padding: 2%;
+    border-radius: 15px;
+    box-shadow: 2px 4px 9px rgba(0, 0, 0, 0.5);
+    border: 1px solid var(--primaryColor);
+}
+
+#contact-form .form-label 
+{
+    color: var(--textColor);
+}
+
+#contact-form .form-control 
+{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--primaryColor);
+    color: var(--textColor);
+}
+
+#contact-form .form-control:focus
+ {
+    border-color: var(--primaryColor);
+    box-shadow: 0 0 0 0.2rem rgba(221, 153, 51, 0.25);
+}
+
+#contact-form .btn-primary 
+{
+    background-color: var(--primaryColor);
+    border-color: var(--primaryColor);
+}
+
+#contact-form .btn-primary:hover 
+{
+    background-color: #b87328;
+    border-color: #b87328;
+}

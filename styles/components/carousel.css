@@ -1,0 +1,78 @@
+.carousel-control-prev-icon 
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgba(189, 137, 81, 1)' stroke='rgba(189, 137, 81, 1)' stroke-width='1' d='M11.354 3.646a.5.5 0 0 1 0 .708L6.707 9l4.647 4.646a.5.5 0 0 1-.708.708l-5-5a.5.5 0 0 1 0-.708l5-5a.5.5 0 0 1 .708 0z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon 
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 16 16' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill='rgba(189, 137, 81, 1)' stroke='rgba(189, 137, 81, 1)' stroke-width='1' d='M4.646 3.646a.5.5 0 0 0 0 .708L9.293 9l-4.647 4.646a.5.5 0 0 0 .708.708l5-5a.5.5 0 0 0 0-.708l-5-5a.5.5 0 0 0-.708 0z'/%3E%3C/svg%3E") !important;
+}
+.carousel-item 
+{
+    min-height: 680px;
+}
+
+.carousel-indicators.custom-carousel-indicators 
+{
+    position: relative;
+    display: flex;
+}
+
+.carousel-indicators .custom-indicator 
+{
+    width: 100px;
+    height: 100px;
+    border-radius: 20%;
+    background-color: gray;
+    filter: grayscale(100%);
+    cursor: pointer;
+    border: none;
+}
+
+.carousel-indicators .custom-indicator.active 
+{
+    filter: none;
+    width: 110px;
+    height: 110px;
+}
+
+.carousel-indicators .custom-indicator:nth-child(1) 
+{
+    background-image: url('../../icons/projectFlintStones.jpg') !important; 
+    background-size: cover;
+}
+
+.carousel-indicators .custom-indicator:nth-child(2)
+ {
+    background-image: url('../../icons/zombieGame.png'); 
+    background-size: 185%;
+    background-position: center;
+}
+
+.carousel-indicators .custom-indicator:nth-child(3) 
+{
+    background-image: url('../../icons/weaponGeneratorIcon.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+
+.carousel-indicators .custom-indicator.active:nth-child(1)
+ {
+    background-image: url('path/to/your/icon1_active.png'); 
+    background-size: cover;
+}
+
+.carousel-indicators .custom-indicator.active:nth-child(2) 
+{
+    background-image: url('../../icons/zombieGame.png'); 
+    background-size: 185%;
+    background-position: center;
+}
+
+.carousel-indicators .custom-indicator.active:nth-child(3)
+ {
+    background-image: url('../../icons/weaponGeneratorIcon.jpg'); 
+    background-size: cover;
+    background-position: center;
+}

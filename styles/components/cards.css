@@ -1,0 +1,89 @@
+.custom-img-driftshop 
+{
+    background-color: white;
+    background-image: url('../../icons/driftshop.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.custom-img-ppb
+{
+    background-color: black;
+    background-image: url('../../images/ppb/ppb.jpg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+.card 
+{
+    border: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+    border-radius: 8px;
+    overflow: hidden;
+    background: none;
+}
+
+
+.card:hover
+ {
+   scale: 105%;
+   cursor: pointer;
+}
+
+.card-img-top 
+{
+    object-fit: cover;
+    height: 180px;
+}
+
+.card-img-top:hover
+{
+    filter: grayscale(0.8);
+}
+
+.card-body 
+{
+    background-color: var(--primaryColor);
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-title
+ {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.card-text
+ {
+    font-size: 0.9rem;
+    text-align: center;
+   
+}
+
+/* Media queries for responsive adjustments */
+@media (max-width: 767.98px)
+ {
+    .card-img-top
+     {
+        height: 150px;
+    }
+
+    .card-title 
+    {
+        font-size: 1rem;
+    }
+
+    .card-text 
+    {
+        font-size: 0.8rem;
+    }
+}

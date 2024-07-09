@@ -1,0 +1,51 @@
+.navbar
+{
+    background-color:  var(--navbarBgColor);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    height: 100px;
+}
+
+.nav-link
+{
+    color: var(--navbarTextColor)  !important;
+    font-size: 1rem;
+    font-weight: 700;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.nav-link:hover
+{
+    color: var(--primaryColor) !important;
+    background-color: var(--navbarTextHover);
+}
+
+.navbar-brand
+{
+    font-size: 2rem;
+    font-weight: 800 !important;
+    cursor: pointer;
+    text-decoration: none;
+    color: var(--navbarTextColor) !important;
+}
+
+.navbar-toggler 
+{
+    border-color: transparent; 
+}
+
+.navbar-toggler-icon 
+{
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(189, 137, 81, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E") !important;
+}
+
+.navbar-toggler:focus 
+{
+    outline: none;
+    border: 2px solid rgba(189, 137, 81, 1) !important;
+}
+
+.activePage
+{
+    color: var(--primaryColor) !important;
+}

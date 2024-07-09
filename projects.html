@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ramses Everaert - Game Development - Portfolio</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- StyleSheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg text-uppercase">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="#">Ramses Everaert</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link px-lg-4 rounded" href="./index.html">About Me</a>
+                    <a class="nav-link px-lg-4 rounded activePage" aria-current="page" href="./projects.html">Projects</a>
+                    <a class="nav-link px-lg-4 rounded" href="./contact.html">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+        <div>
+            <h1 id="Showcase">Show case:</h1>
+        </div>
+        
+        <!-- Carousel for larger screens -->
+        <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="20000">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="container">
+                        <div class="row projectDetails">
+                            <video autoplay loop muted class="projectVideo col-md-6">
+                                <source src="./videos/project_flintstones_2022_10_17.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="col-md-6 projectText">
+                                <h2>Flintstones Sega Genesis 1993 - Clone (2022)</h2>
+                                <p>For our <strong><span class="highlight">first-year programming 1 course</span></strong>, we were tasked with applying everything we had learned to create a clone of a game of our choice. The teachers provided us with a basic framework, which we had to complete on our own to successfully <strong><span class="highlight">recreate a 2D platformer game</span></strong>.</p>
+                                <p>I chose to recreate The Flintstones because it presented <strong><span class="highlight">several challenges</span></strong> I wanted to tackle: parallax scrolling, ledge grabbing, complex 2D animations, and more realistic physics. These aspects offered a great opportunity to <strong><span class="highlight">deepen my understanding of C++</span></strong> and the mechanics of 2D platformer games.</p>
+                                <p>It was a fun project to master as much as possible of the basics of C++, and I learned a lot about 2D platformer games.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row projectDetails">
+                            <div class="col-lg-8">
+                                <img src="./videos/ZombieGame.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
+                            </div>
+                            <div class="col-lg-4 projectText">
+                                <h2>AI Behaviors in Zombie Game</h2>
+                                <p>In this project, we were provided with a zombie minigame by our teachers, which included various elements such as randomly spawned zombies, instant-kill purge zones, and randomly spawned houses containing items. The objective of the assignment was <strong><span class="highlight">to develop an AI that maximizes the survival time of our agent</span></strong> .</p>
+                                <p>The AI needed to:</p>
+                                <ul>
+                                    <li>Automatically explore the game world.</li>
+                                    <li>Efficiently handle enemies.</li>
+                                    <li>Strategically manage items by picking them up and using them at the right moments.</li>
+                                </ul>
+                                <p>Through this project, I applied my skills in <strong><span class="highlight">AI development and strategic problem-solving</span></strong> to create an AI agent capable of surviving in a dynamic and hostile environment.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="container">
+                        <div class="row projectDetails">
+                            <video autoplay loop muted class="projectVideo col-md-6">
+                                <source src="videos/weaponGenerator.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                            <div class="col-md-6 projectText">
+                                <h2>Weapon Generator Project</h2>
+                                <p>For this project, we were tasked with developing a <strong><span class="highlight">procedural 3D model generator</span></strong>. I decided to focus on creating a <strong><span class="highlight">weapon generator</span></strong>, which provides users with the creative freedom to design their own swords and other medieval weapons.</p>
+                                
+                                <h3>Project Overview</h3>
+                                <p>The weapon generator allows users to construct a variety of weapons by manipulating four main components: the <strong><span class="highlight">pommel</span></strong>, <strong><span class="highlight">handle</span></strong>, <strong><span class="highlight">guard</span></strong>, and <strong><span class="highlight">blade</span></strong>. Each component can be customized using an intuitive interface, where parameters can be adjusted.</p>
+                        
+                                <h3>Key Features</h3>
+                                <ul>
+                                    <li><strong><span class="highlight">Intuitive Interface</span></strong>: The user-friendly interface allows for easy manipulation of weapon parts. </li>
+                                    <li><strong><span class="highlight">Procedural Generation</span></strong>: Every weapon is unique and tailored to the user's specifications.</li>
+                                    <li><strong><span class="highlight">Versatility</span></strong>: By adding extra ornaments, additional blade options, and editing the blade ramp, users can craft spears, battle axes, and more.</li>
+                                    <li><strong><span class="highlight">Real-time Preview</span></strong>: Users can see their modifications in real-time.</li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+            <div class="carousel-indicators custom-carousel-indicators d-none d-md-flex">
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="custom-indicator active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" class="custom-indicator" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" class="custom-indicator" aria-label="Slide 3"></button>
+            </div>
+        </div>
+
+        <!-- Stacked view for smaller screens -->
+        <section class="d-block d-md-none">
+            <div class="container">
+                <div class="row projectDetails">
+                    <div class="col-12">
+                        <video autoplay loop muted class="projectVideo img-fluid">
+                            <source src="./videos/project_flintstones_2022_10_17.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="col-12 projectText">
+                        <h2>Flintstones Sega Genesis 1993 - Clone (2022)</h2>
+                        <p>For our <strong><span class="highlight">first-year programming 1 course</span></strong>, we were tasked with applying everything we had learned to create a clone of a game of our choice. The teachers provided us with a basic framework, which we had to complete on our own to successfully <strong><span class="highlight">recreate a 2D platformer game</span></strong>.</p>
+                        <p>I chose to recreate The Flintstones because it presented <strong><span class="highlight">several challenges</span></strong> I wanted to tackle: parallax scrolling, ledge grabbing, complex 2D animations, and more realistic physics. These aspects offered a great opportunity to <strong><span class="highlight">deepen my understanding of C++</span></strong> and the mechanics of 2D platformer games.</p>
+                        <p>It was a fun project to master as much as possible of the basics of C++, and I learned a lot about 2D platformer games.</p>
+                    </div>
+                </div>
+                <div class="row projectDetails">
+                    <div class="col-12">
+                        <img src="./videos/ZombieGame.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
+                    </div>
+                    <div class="col-12 projectText">
+                        <h2>AI Behaviors in Zombie Game</h2>
+                        <p>In this project, we were provided with a zombie minigame by our teachers, which included various elements such as randomly spawned zombies, instant-kill purge zones, and randomly spawned houses containing items. The objective of the assignment was to develop an AI that maximizes the survival time of our agent.</p>
+                        <p>The AI needed to:</p>
+                        <ul>
+                            <li>Automatically explore the game world.</li>
+                            <li>Efficiently handle enemies.</li>
+                            <li>Strategically manage items by picking them up and using them at the right moments.</li>
+                        </ul>
+                        <p>Through this project, I applied my skills in AI development and strategic problem-solving to create an AI agent capable of surviving in a dynamic and hostile environment.</p>
+                    </div>
+                </div>
+                <div class="row projectDetails">
+                    <video autoplay loop muted class="projectVideo col-md-6">
+                        <source src="videos/weaponGenerator.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="col-md-6 projectText">
+                        <h2>Weapon Generator Project</h2>
+                        <p>For this project, we were tasked with developing a <strong><span class="highlight">procedural 3D model generator</span></strong>. I decided to focus on creating a <strong><span class="highlight">weapon generator</span></strong>, which provides users with the creative freedom to design their own swords and other medieval weapons.</p>
+                        
+                        <h3>Project Overview</h3>
+                        <p>The weapon generator allows users to construct a variety of weapons by manipulating four main components: the <strong><span class="highlight">pommel</span></strong>, <strong><span class="highlight">handle</span></strong>, <strong><span class="highlight">guard</span></strong>, and <strong><span class="highlight">blade</span></strong>. Each component can be customized using an intuitive interface, where parameters can be adjusted.</p>
+                
+                        <h3>Key Features</h3>
+                        <ul>
+                            <li><strong><span class="highlight">Intuitive Interface</span></strong>: The user-friendly interface allows for easy manipulation of weapon parts. </li>
+                            <li><strong><span class="highlight">Procedural Generation</span></strong>: Every weapon is unique and tailored to the user's specifications.</li>
+                            <li><strong><span class="highlight">Versatility</span></strong>: By adding extra ornaments, additional blade options, and editing the blade ramp, users can craft spears, battle axes, and more.</li>
+                            <li><strong><span class="highlight">Real-time Preview</span></strong>: Users can see their modifications in real-time.</li>
+                        </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Grid -->
+        <section class="container my-5">
+            <h2 class="text-center mb-4">My Projects</h2>
+            <!-- Filter Bar -->
+            <div class="container my-3 filter-bar">
+                <div class="btn-group" role="group" aria-label="Filter Projects">
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="games">Games</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="graphics">Graphics</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="ai">AI</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="algorithms">Algorithms</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="game-jam">Game Jam</button>
+                    <button type="button" class="btn btn-outline-primary filter-btn" data-filter="extra">Extra</button>
+                </div>
+            </div>
+            <div class="row row-cols-1 row-cols-md-3 g-4">
+                <!-- Project 1 -->
+                <div class="col filter-item" data-category="games">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#project1Modal">
+                        <img src="./images/flintstones/Flintstones.jpg" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">2D Platformer - The Flintstones (clone)</h5>
+                            <p class="card-text">C++, 10 Jan 2022</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Project 1 -->
+                <div class="modal fade" id="project1Modal" tabindex="-1" aria-labelledby="project1ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project1ModalLabel">2D Platformer - The Flintstones (clone)</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>ABOUT THE GAME</h2>
+                                <p>The Flintstones is a 2D Platformer game for the Sega Genesis, based on the animated television series "The Flintstones". It is published in 1993 by Taito in North America and Japan.
+                                    The player controls Fred Flintstone, who must complete seven tasks. The player is capable of jumping, and uses a club as a weapon against various enemies throughout the game.
+                                </p>
+                                <h2>WHAT I DID</h2>
+                                <p>This project was an experiment to apply everything I have learned at school into real-life experience. With a basic framework, I had to finish the engine and use it to recreate this game, made for Sega Genesis, in C++.</p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="./images/flintstones/flintstones1.png" data-lightbox="flintstone-gallery" data-title="Flintstones Image 1">
+                                            <img src="./images/flintstones/flintstones1.png" class="modal-img img-fluid mb-3" alt="Flintstones Image 1">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="./images/flintstones/flintstones2.png" data-lightbox="flintstone-gallery" data-title="Flintstones Image 2">
+                                            <img src="./images/flintstones/flintstones2.png" class="modal-img img-fluid mb-3" alt="Flintstones Image 2">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="./images/flintstones/flintstones3.png" data-lightbox="flintstone-gallery" data-title="Flintstones Image 3">
+                                            <img src="./images/flintstones/flintstones3.png" class="modal-img img-fluid mb-3" alt="Flintstones Image 3">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bWgPzLhcPHI?si=J3y8jg70BiBtcy0L" allowfullscreen></iframe>
+                                </div>
+                                <table class="table table-dark mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Engine</th>
+                                            <th scope="col">Language</th>
+                                            <th scope="col">Programmer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Basic Framework</td>
+                                            <td>C++</td>
+                                            <td>Ramses Everaert</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+               <!-- Project 2 -->
+                <div class="col filter-item" data-category="games">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#project2Modal">
+                        <div class="card-img-top custom-img-ppb"></div>
+                        <div class="card-body">
+                            <h5 class="card-title">Topdown shooter - Pixel Prison Breakdown</h5>
+                            <p class="card-text">Unity, C#, 10 Oct 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Project 2 -->
+                <div class="modal fade" id="project2Modal" tabindex="-1" aria-labelledby="project2ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project2ModalLabel">Topdown shooter - Pixel Prison Breakdown</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <p>Fight for freedom in this heavily guarded prison with just a gun, a simple knife and teammate. Try to survive as long as you can!</p>
+                                <h2>ABOUT THE GAME</h2>
+                                <p>Pixel Prison Breakdown is a 2D top-down, two players co-op multiplayer, Wave Survival Shooter game where you and your teammate are wrongfully imprisoned by sadistic guards. After an eternity of suffer, you finally succeed to smuggle a gun and knife in your cell. The day of reckoning has begun, now it's time for revenge and to try and escape this prison! Use your weapons to fight your way to freedom before it's too late, you won't have a second chance! </p>
+                                <h2>THE TEAM</h2>
+                                <img src="./images/ppb/ppbTeam.png" class="img-fluid mb-3" alt="Pixel Prison Breakdown Team">
+                                <h2>MY ROLE</h2>
+                                <div class="custom-list-container">
+                                    <ul class="custom-list">
+                                        <li><i class="fas fa-check-circle"></i> Wave spawn mechanics</li>
+                                        <li><i class="fas fa-check-circle"></i> Enemy behaviour</li>
+                                        <li><i class="fas fa-check-circle"></i> Player follow algorithms</li>
+                                        <li><i class="fas fa-check-circle"></i> Lighting and effects</li>
+                                        <li><i class="fas fa-check-circle"></i> Shooting mechanic</li>
+                                    </ul>
+                                </div>
+                                <p></p>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <a href="./images/ppb/ppb1.JPG" data-lightbox="ppb-gallery" data-title="Pixel Prison Breakdown Image 1">
+                                            <img src="./images/ppb/ppb1.JPG" class="modal-img img-fluid mb-3" alt="Pixel Prison Breakdown Image 1">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="./images/ppb/ppb2.JPG" data-lightbox="ppb-gallery" data-title="Pixel Prison Breakdown Image 2">
+                                            <img src="./images/ppb/ppb2.JPG" class="modal-img img-fluid mb-3" alt="Pixel Prison Breakdown Image 2">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <a href="./images/ppb/ppb3.JPG" data-lightbox="ppb-gallery" data-title="Pixel Prison Breakdown Image 3">
+                                            <img src="./images/ppb/ppb3.JPG" class="modal-img img-fluid mb-3" alt="Pixel Prison Breakdown Image 3">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/btyZMPkRxeI?si=Bg_ze5zvO0gHTbb8" allowfullscreen></iframe>
+                                 </div>
+                                <table class="table table-dark mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Engine</th>
+                                            <th scope="col">Language</th>
+                                            <th scope="col">Programmer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Unity</td>
+                                            <td>C#</td>
+                                            <td>Ramses Everaert</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="col filter-item" data-category="ai algorithms">
+                    <div class="card"  data-bs-toggle="modal" data-bs-target="#project3Modal">
+                        <img src="./images/flocking/flocking.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">AI Behaviors - Flocking</h5>
+                            <p class="card-text">C++, 10 Oct 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Project 3 -->
+                <div class="modal fade" id="project3Modal" tabindex="-1" aria-labelledby="project3ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project2ModalLabel">AI Behaviors - Flocking</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>ABOUT THE ASSIGNMENT</h2>
+                                <p>I was assigned to investigate flocking behavior AI in video games. The goal was to spawn as many agents as possible that have the following steering behaviors:</p>
+                                <ul class="custom-list">
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Seek / Flee</li>
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Arrive</li>
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Wander</li>
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Pursuit / Evade</li>
+                                </ul>
+                                <p>I aimed to combine these steering behaviors to create an AI that moves agents effectively.</p>
+                                <p>Because many agents with individual behaviors can cause performance loss (frame rate drop), I needed to use spatial partitioning. This technique divides space into multiple sub-spaces or partitions to aid in data processing and reduce unnecessary calculations.</p>
+                                <p>In this project, I'm using flat partitioning with the following characteristics:</p>
+                                <ul class="custom-list">
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Uniform grid</li>
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Constant memory size</li>
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Cheap updates</li>
+                                </ul>
+                                <p>This project will be updated to use hierarchical partitioning with a tree structure for more performance-efficient techniques.</p>
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <video class="embed-responsive-item" controls>
+                                        <source src="./videos/Flocking.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <h2>Working of Space Partitioning</h2>
+                                <ol class="custom-list-ordered">
+                                    <li>Divide into a grid <br><br> <img src="./images/flocking/spatialPartitioningGrid.png" class="img-fluid mb-3" alt="Grid Image"></li>
+                                    <li>Check neighbors in the neighborhood radius using a check for overlapping rectangles <br><br> <img src="./images/flocking/spacePartitioningNeighbors.png" class="img-fluid mb-3" alt="Overlapping Rectangles Image"></li>
+                                    <li>Each neighbor checks their neighbors</li>
+                                </ol>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="col filter-item" data-category="graphics">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#project4Modal">
+                        <img src="./images/raytracer/raytracer.PNG" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Graphics - Raytracer</h5>
+                            <p class="card-text">DirectX, C++, 12 Nov 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Project 4 -->
+                <div class="modal fade" id="project4Modal" tabindex="-1" aria-labelledby="project4ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project2ModalLabel">Graphics - Raytracer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>ABOUT THE ASSIGNMENT</h2>
+                                <p>
+                                    To understand Graphics Programming and how the render pipeline of graphics APIs work, we first needed to grasp the mathematics behind rasterization.
+                                </p>
+                                <p>
+                                    We learned how to visualize objects in screen space using the ray tracing method. This involves shooting rays from the camera view to the object to calculate the intersections with the target object.
+                                </p>
+                                <p>
+                                    This method is used to simulate lighting in scenes, including:
+                                </p>
+                                <ul>
+                                    <li>Reflections</li>
+                                    <li>Shadows</li>
+                                    <li>Indirect light</li>
+                                </ul>
+                                <p>
+                                    It is also used to determine whether we see the front or back face of an object for culling and improved performance.
+                                </p>
+                                <p>
+                                    Understanding these basics was essential for our next project: rasterization.
+                                </p>
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <video autoplay loop muted class="embed-responsive-item" controls>
+                                        <source src="./videos/raytracer.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <table class="table table-dark mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Graphics API</th>
+                                            <th scope="col">Language</th>
+                                            <th scope="col">Programmer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>DirectX and Vulkan</td>
+                                            <td>C++</td>
+                                            <td>Ramses Everaert</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="col filter-item" data-category="graphics">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#project5Modal">
+                        <img src="./images/raterizer/rasterizer.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Graphics - Rasterizer</h5>
+                            <p class="card-text">Vulkan & DirectX, C++, 10 Nov 2023</p>
+                        </div>
+                    </div>
+                </div>
+                  <!-- Modal for Project 5 -->
+                  <div class="modal fade" id="project5Modal" tabindex="-1" aria-labelledby="project5ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project2ModalLabel">Graphics - Rasterizer</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>ABOUT THE ASSIGNMENT</h2>
+                                <p>The assignment for this project was to create a physics-based rendering (PBR) shader and apply it to a 3D model read from an .obj file. The goal was to solve visibility problems, simulate light and material behaviors, and manage resources.</p>
+                                <p>For this exercise, we had to write the rasterization phase ourselves to understand how this works in graphics APIs such as DirectX and Vulkan.</p>
+                                <p>After developing our own rasterizer, we had to re-implement it using the DirectX and Vulkan APIs. We self-studied how the pipelines worked in both APIs, utilizing online documentation and private help from the teachers.</p>
+                                <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <video autoplay loop muted class="embed-responsive-item" controls>
+                                        <source src="./videos/rasterizer.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <table class="table table-dark mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Graphics API</th>
+                                            <th scope="col">Language</th>
+                                            <th scope="col">Programmer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>DirectX and Vulkan</td>
+                                            <td>C++</td>
+                                            <td>Ramses Everaert</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="col filter-item" data-category="ai algorithms">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#project6Modal">
+                        <img src="./images/zombieGame/zombiegame.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">AI behaviors - Zombie Game</h5>
+                            <p class="card-text">C++, 12 Jan 2023</p>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Modal for Project 6 -->
+                 <div class="modal fade" id="project6Modal" tabindex="-1" aria-labelledby="project6ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project2ModalLabel">AI behaviors - Zombie Game</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>ABOUT THE ASSIGNMENT</h2>
+                                <p>In this project, we were provided with a zombie minigame by our teachers, which included various elements such as randomly spawned zombies, instant-kill purge zones, and randomly spawned houses containing items. The objective of the assignment was to develop an AI that maximizes the survival time of our agent .</p>
+                                <p>The AI needed to:</p>
+                                <ul class="custom-list">
+                                    <li><i class="fas fa-solid fa-chevron-right"></i>Automatically explore the game world</li>
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Efficiently handle enemies</li>
+                                    <li><i class="fas fa-solid fa-chevron-right"></i> Strategically manage items by picking them up and using them at the right moments</li>
+                                </ul>
+                                <p>Through this project, I applied my skills in AI development and strategic problem-solving to create an AI agent capable of surviving in a dynamic and hostile environment.</p>
+                                <img src="./videos/ZombieGame.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
+                                <table class="table table-dark mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Engine</th>
+                                            <th scope="col">Language</th>
+                                            <th scope="col">Programmer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Basic Framework</td>
+                                            <td>C++</td>
+                                            <td>Ramses Everaert</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="col filter-item" data-category="algorithms">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#project7Modal">
+                        <img src="./images/flowfield/researchFlowField.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">Research - Flow Field</h5>
+                            <p class="card-text">C++, 12 Jan 2023</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Project 7 -->
+                <div class="modal fade" id="project7Modal" tabindex="-1" aria-labelledby="project7ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project2ModalLabel">Research - Flow Field</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2>ABOUT THE ASSIGNMENT</h2>
+                                <p>With this project I want to introduce an exploration of flow field pathfinding as a more efficient alternative for guiding large groups of units - in this case, particles. This flow field pathfinding operates on a node grid, directing multiple units simultaneously toward a goal while dynamically avoiding obstacles. This method not only streamlines the movement of large groups but also ensures the shortest possible path is taken, significantly enhancing efficiency in situations where coordinated movement is very important.
+                                </p>
+                                <a href="https://github.com/Howest-DAE-GD/gpp-researchtopic-RamsesEveraert"> Link to my Research page on GitHub</a>
+                                <img src="./images/flowfield/flowFieldHeatMap.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
+                                <img src="./images/flowfield/flowFieldVectorField.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
+                                <img src="./images/flowfield/flowfieldPreview.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
+                                <table class="table table-dark mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Engine</th>
+                                            <th scope="col">Language</th>
+                                            <th scope="col">Programmer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Basic Framework</td>
+                                            <td>C++</td>
+                                            <td>Ramses Everaert</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="col filter-item" data-category="extra">
+                    <div class="card" data-bs-toggle="modal" data-bs-target="#project8Modal">
+                        <img src="./images/weaponGenerator/weaponGenerator.png" class="card-img-top" alt="Project Image">
+                        <div class="card-body">
+                            <h5 class="card-title">3D - Weapon Generator</h5>
+                            <p class="card-text">Houdini, 30 May 2024</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal for Project 8 -->
+                <div class="modal fade" id="project8Modal" tabindex="-1" aria-labelledby="project8ModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="project8ModalLabel">3D - Weapon Generator</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                                <h2 class="text-uppercase">About the Assignment</h2>
+                                <p>For this project, we were tasked with developing a procedural 3D model generator. I decided to focus on creating a weapon generator, which provides users with the creative freedom to design their own swords and other medieval weapons.</p>
+                                <h2 class="text-uppercase">Project Overview</h2>
+                                <p>The weapon generator allows users to construct a variety of weapons by manipulating four main components: the pommel, handle, guard, and blade. Each component can be customized using an intuitive interface, where parameters can be adjusted to create unique and intricate designs.</p>
+                                <h2 class="text-uppercase">Key Features</h2>
+                                <ul class="custom-list">
+                                    <li><i class="fas fa-check-circle"></i> Intuitive Interface: Easy manipulation of weapon parts through sliders and input fields.</li>
+                                    <li><i class="fas fa-check-circle"></i> Procedural Generation: Produce countless variations, ensuring unique and tailored designs.</li>
+                                    <li><i class="fas fa-check-circle"></i> Versatility: Design various weapon types including swords, spears, and battle axes.</li>
+                                    <li><i class="fas fa-check-circle"></i> Real-time Preview: Immediate visual feedback for precise adjustments.</li>
+                                </ul>
+                                <h2 class="text-uppercase">Customization Options</h2>
+                                <ul class="custom-list">
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Pommel:</strong> Adjust the shape, size, and decoration of the pommel.</li>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Handle:</strong> Customize the length, grip texture, and materials of the handle.</li>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Guard:</strong> Modify the guard's width, curvature, and design elements.</li>
+                                    <li><i class="fas fa-chevron-right"></i> <strong>Blade:</strong> Choose from various blade shapes, and adjust the blade's length and width.</li>
+                                </ul>
+                               <div class="embed-responsive embed-responsive-16by9 mb-3">
+                                    <video class="embed-responsive-item" controls>
+                                        <source src="./videos/weaponGenerator.mp4" type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <table class="table table-dark mt-4">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">Software</th>
+                                            <th scope="col">Language</th>
+                                            <th scope="col">Developer</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Houdini</td>
+                                            <td>Python</td>
+                                            <td>Ramses Everaert</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close Project</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    <footer>
+        <p>
+           <strong> &copy Ramses Everaert 2024-2025</strong>
+        </p>
+    </footer>
+    
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
+    <script src="scripts/main.js"></script>
+</body>
+</html>
