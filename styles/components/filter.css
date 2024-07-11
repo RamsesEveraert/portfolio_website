@@ -4,6 +4,12 @@
     margin-bottom: 2rem;
 }
 
+.filter-bar .btn-group 
+{
+    display: flex;
+    flex-wrap: nowrap;
+}
+
 .filter-bar .btn 
 {
     margin: 0.2rem;
@@ -13,17 +19,17 @@
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
 }
 
-.filter-bar .btn:hover
- {
-    background-color: var(--primaryColor);
-    border-color: var(--primaryColor);
-    color: fff;
+.filter-bar .btn:hover 
+{
+    background-color: var(--accentColor);
+    border-color: var(--accentColor);
+    color: #fff;
 }
 
-.filter-bar .btn.active
- {
-    background-color: var(--primaryColor);
-    border-color:var(--primaryColor);
+.filter-bar .btn.active 
+{
+    background-color: var(--accentColor);
+    border-color: var(--accentColor);
     color: #fff;
 }
 

@@ -16,7 +16,7 @@
 </head>
 <body>
     <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg text-uppercase">
+    <nav class="navbar navbar-expand-lg text-uppercase" style="background-color: var(--navbarBgColor);">
         <div class="container">
             <a class="navbar-brand fw-bold" href="#">Ramses Everaert</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -32,8 +32,8 @@
         </div>
     </nav>
     <!-- Main Section -->
-    <section class="container mt-5">
-        <div id="aboutMe" class="row">
+    <section class="container mt-5" id="aboutMe">
+        <div class="row">
             <div class="col-12 col-md-4">
                 <img src="images/Me.jpg" alt="About Me Image" class="aboutMeImage img-fluid">
             </div>
@@ -51,7 +51,6 @@
                     I’ve learned in an internship and help create games that players will enjoy and remember. I look forward to the opportunity 
                     to bring my creativity and technical skills to a dynamic development team.
                 </p>
-                 <!-- TODO:add keyword: download to download the link later-->
                 <a href="#" class="btn btn-primary mt-5 px-5"> <i class="fa-solid fa-scroll"></i> Download Resume</a>
             </div>
         </div>
@@ -59,85 +58,83 @@
 
     <!-- Skills Section -->
     <section class="container mt-5 skills-section">
-        <div id="skills" class="row">
-            <div class="col-12 col-md-6 skill-category">
+        <div class="row">
+            <!-- Programs Section -->
+            <div class="col-12 col-md-6">
                 <h1>Programs</h1>
-                <h4><i class="fas fa-gamepad"></i>Game Engines</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> Unity</li>
-                    <li><i class="fas fa-check"></i> Unreal Engine</li>
-                </ul>
-                <h4><i class="fas fa-brands fa-codepen"></i>Graphics API</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> Vulkan</li>
-                    <li><i class="fas fa-check"></i> DirectX</li>
-                </ul>
-                <h4><i class="fas fa-cube"></i>Modeling</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> Maya</li>
-                    <li><i class="fas fa-check"></i> Blender</li>
-                    <li><i class="fas fa-check"></i> Cinema4D</li>
-                    <li><i class="fas fa-check"></i> Houdini</li>
-                </ul>
-                <h4><i class="fas fa-video"></i>Video Editing</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> OBS</li>
-                    <li><i class="fas fa-check"></i> Premiere Pro</li>
-                </ul>
-                <h4><i class="fas fa-microphone"></i>Audio Editing</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> Audacity</li>
-                    <li><i class="fas fa-check"></i> Audition</li>
-                </ul>
-                <h4><i class="fas fa-image"></i>Image Editing</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> Photoshop</li>
-                    <li><i class="fas fa-check"></i> Illustrator</li>
-                </ul>
+                <div class="row">
+                    <div class="col-6">
+                        <h4><i class="fas fa-gamepad"></i>Game Engines</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> Unity</li>
+                            <li><i class="fas fa-check"></i> Unreal Engine</li>
+                        </ul>
+                        <h4><i class="fas fa-cube"></i>Modeling</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> Maya</li>
+                            <li><i class="fas fa-check"></i> Blender</li>
+                            <li><i class="fas fa-check"></i> Cinema4D</li>
+                            <li><i class="fas fa-check"></i> Houdini</li>
+                        </ul>
+                        <h4><i class="fas fa-brands fa-codepen"></i>Graphics API</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> Vulkan</li>
+                            <li><i class="fas fa-check"></i> DirectX</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h4><i class="fas fa-video"></i>Video Editing</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> OBS</li>
+                            <li><i class="fas fa-check"></i> Premiere Pro</li>
+                        </ul>
+                        <h4><i class="fas fa-microphone"></i>Audio Editing</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> Audacity</li>
+                            <li><i class="fas fa-check"></i> Audition</li>
+                        </ul>
+                        <h4><i class="fas fa-image"></i>Image Editing</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> Photoshop</li>
+                            <li><i class="fas fa-check"></i> Illustrator</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="col-12 col-md-6 skill-category">
+            <!-- Programming Languages Section -->
+            <div class="col-12 col-md-6">
                 <h1>Programming Languages</h1>
-                <h4><i class="fas a-solid fa-battery-full"></i>Primary</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> C++</li>
-                    <li><i class="fas fa-check"></i> C#</li>
-                    <li><i class="fas fa-check"></i> UE Blueprint</li>
-                </ul>
-                <h4><i class="fas a-solid fa-battery-half"></i>Secondary</h4>
-                <ul class="list-unstyled">
-                    <li><i class="fas fa-check"></i> HTML</li>
-                    <li><i class="fas fa-check"></i> CSS</li>
-                    <li><i class="fas fa-check"></i> JavaScript</li>
-                </ul>
-
-                <div id="profile" class="mt-5  px-3">
+                <div class="row">
+                    <div class="col-6">
+                        <h4><i class="fas fa-battery-full"></i>Primary</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> C++</li>
+                            <li><i class="fas fa-check"></i> C#</li>
+                            <li><i class="fas fa-check"></i> UE Blueprint</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <h4><i class="fas fa-battery-half"></i>Secondary</h4>
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-check"></i> HTML</li>
+                            <li><i class="fas fa-check"></i> CSS</li>
+                            <li><i class="fas fa-check"></i> JavaScript</li>
+                        </ul>
+                    </div>
+                </div>
+                <div id="profile" class=" mt-2 px-3">
                     <h4>My Profile:</h4>
-                    <p>
-                        <i class="fas fa-regular fa-address-card"></i>
-                        Ramses Everaert                 
-                    </p>
-                    <p>
-                        <i class="fas fa-solid fa-scroll"></i>
-                        Digital Arts and Entertainment - Game Development              
-                    </p>
-                    <p>
-                        <i class="fas fa-solid fa-square-phone"></i>
-                        +32 496/66.47.69              
-                    </p>
-                    <p>
-                        <i class="fas fa-regular fa-square-envelope"></i>
-                        ramses.e@hotmail.be            
-                    </p>
-                    <p>
-                        <i class="fas fa-solid fa-magnifying-glass"></i>
-                        Internship: 10 february 2025 - 13 june 2025
-                    </p>
+                    <p><i class="fas fa-regular fa-address-card"></i> Ramses Everaert</p>
+                    <p><i class="fas fa-solid fa-scroll"></i> Digital Arts and Entertainment - Game Development</p>
+                    <p><i class="fas fa-solid fa-square-phone"></i> +32 496/66.47.69</p>
+                    <p><i class="fas fa-regular fa-square-envelope"></i> ramses.e@hotmail.be</p>
+                    <p><i class="fas fa-solid fa-magnifying-glass"></i> Internship: 10 February 2025 - 13 June 2025</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer>
+    <footer class="mt-5">
         <strong>&copy; Ramses Everaert 2024-2025</strong>
     </footer>
 

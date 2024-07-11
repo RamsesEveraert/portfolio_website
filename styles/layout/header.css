@@ -45,6 +45,15 @@
     border: 2px solid rgba(189, 137, 81, 1) !important;
 }
 
+/* Custom styles for the dropdown menu */
+.navbar-nav .nav-link 
+{
+    background-color:var(--navbarBgColor); 
+    color: var(--textColor); 
+    padding: 6px;
+    border-radius: 5px;
+}
+
 .activePage
 {
     color: var(--primaryColor) !important;
