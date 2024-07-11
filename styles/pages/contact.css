@@ -1,0 +1,22 @@
+.contact-info 
+{
+    font-size: 1.2rem;
+    color: var(--primaryColor);
+}
+
+.contact-info i 
+{
+    color: var(--primaryColor);
+    margin-right: 0.5rem;
+}
+
+.contact-info a, .contact-info p 
+{
+    display: inline-block;
+    margin: 0.5rem 0;
+}
+
+.contact-info p 
+{
+    margin: 1rem 0 0;
+}
