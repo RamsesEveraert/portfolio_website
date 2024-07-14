@@ -45,14 +45,14 @@
         </div>
         
         <!-- Carousel for larger screens -->
-        <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel" data-bs-interval="20000">
+        <div id="carouselExampleCaptions" class="carousel slide d-none d-md-block" data-bs-ride="carousel">
             <div class="carousel-inner">
                 <div class="carousel-item active">
                     <div class="container">
                         <div class="row projectDetails">
                             <div class="col-md-8">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe mute class="embed-responsive-item" src="https://www.youtube.com/embed/bWgPzLhcPHI?si=ByxNV6r_evNfo1O4" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item youtube-video" id="video1" src="https://www.youtube.com/embed/bWgPzLhcPHI?rel=0&enablejsapi=1" allowfullscreen></iframe>
                                 </div>
                             </div>
                             <div class="col-md-4 projectText">
@@ -89,7 +89,7 @@
                         <div class="row projectDetails">
                             <div class="col-md-8">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe mute class="embed-responsive-item" src="https://www.youtube.com/embed/Gn-pIEhSZ6w?si=jeEmP0ZBZUXoTdmc" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item youtube-video" id="video2" src="https://www.youtube.com/embed/Gn-pIEhSZ6w?rel=0&enablejsapi=1" allowfullscreen></iframe>
                                 </div>
                             </div>
                             <div class="col-md-4 projectText">
@@ -105,7 +105,6 @@
                                 </ul>
                             </div>
                         </div>
-                        
                     </div>
                 </div>
             </div>
@@ -236,7 +235,7 @@
                                     </div>
                                 </div>
                                 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/bWgPzLhcPHI?si=J3y8jg70BiBtcy0L" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item youtube-video" id="modalVideo1" src="https://www.youtube.com/embed/bWgPzLhcPHI?rel=0&si=J3y8jg70BiBtcy0L" allowfullscreen></iframe>
                                 </div>
                                 <table class="table table-dark mt-4">
                                     <thead>
@@ -314,7 +313,7 @@
                                     </div>
                                 </div>
                                 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/btyZMPkRxeI?si=Bg_ze5zvO0gHTbb8" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item youtube-video" id="modalVideo2" src="https://www.youtube.com/embed/btyZMPkRxeI?rel=0&si=Bg_ze5zvO0gHTbb8" allowfullscreen></iframe>
                                  </div>
                                 <table class="table table-dark mt-4">
                                     <thead>
@@ -376,7 +375,7 @@
                                 </ul>
                                 <p>This project will be updated to use hierarchical partitioning with a tree structure for more performance-efficient techniques.</p>
                                 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/b1oejdVjMH0?si=X_j60TxiHnSeBQ0V" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item youtube-video" id="modalVideo3" src="https://www.youtube.com/embed/b1oejdVjMH0?rel=0&si=X_j60TxiHnSeBQ0V" allowfullscreen></iframe>
                                 </div>
                                 <h2>Working of Space Partitioning</h2>
                                 <ol class="custom-list-ordered">
@@ -432,7 +431,7 @@
                                     Understanding these basics was essential for our next project: rasterization.
                                 </p>
                                 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/fOpM96qh2qE?si=K23EnZNRzsFmpR53" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item youtube-video" id="modalVideo4" src="https://www.youtube.com/embed/fOpM96qh2qE?rel=0&si=K23EnZNRzsFmpR53" allowfullscreen></iframe>
                                 </div>
                                 <table class="table table-dark mt-4">
                                     <thead>
@@ -481,7 +480,7 @@
                                 <p>For this exercise, we had to write the rasterization phase ourselves to understand how this works in graphics APIs such as DirectX and Vulkan.</p>
                                 <p>After developing our own rasterizer, we had to re-implement it using the DirectX and Vulkan APIs. We self-studied how the pipelines worked in both APIs, utilizing online documentation and private help from the teachers.</p>
                                 <div class="embed-responsive embed-responsive-16by9 mb-3">
-                                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ARIPPvf36UA?si=tqGPxW48oIDFNwmK" allowfullscreen></iframe>
+                                    <iframe class="embed-responsive-item youtube-video" id="modalVideo5" src="https://www.youtube.com/embed/ARIPPvf36UA?rel=0&si=tqGPxW48oIDFNwmK" allowfullscreen></iframe>
                                 </div>
                                 <table class="table table-dark mt-4">
                                     <thead>
@@ -580,7 +579,7 @@
                                 <h2>ABOUT THE ASSIGNMENT</h2>
                                 <p>With this project I want to introduce an exploration of flow field pathfinding as a more efficient alternative for guiding large groups of units - in this case, particles. This flow field pathfinding operates on a node grid, directing multiple units simultaneously toward a goal while dynamically avoiding obstacles. This method not only streamlines the movement of large groups but also ensures the shortest possible path is taken, significantly enhancing efficiency in situations where coordinated movement is very important.
                                 </p>
-                                <a href="https://github.com/Howest-DAE-GD/gpp-researchtopic-RamsesEveraert"> Link to my Research page on GitHub</a>
+                                <a href="https://github.com/RamsesEveraert/Flow-Field-Pathfinding"  target="_blank"> Link to my Research page on GitHub</a>
                                 <img src="./images/flowfield/flowFieldHeatMap.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
                                 <img src="./images/flowfield/flowFieldVectorField.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
                                 <img src="./images/flowfield/flowfieldPreview.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
@@ -645,7 +644,7 @@
                                     <li><i class="fas fa-chevron-right"></i> <strong>Blade:</strong> Choose from various blade shapes, and adjust the blade's length and width.</li>
                                 </ul>
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe mute class="embed-responsive-item" src="https://www.youtube.com/embed/Gn-pIEhSZ6w?si=jeEmP0ZBZUXoTdmc" allowfullscreen></iframe>
+                                    <iframe mute class="embed-responsive-item youtube-video" id="modalVideo6" src="https://www.youtube.com/embed/Gn-pIEhSZ6w?rel=0&si=jeEmP0ZBZUXoTdmc" allowfullscreen></iframe>
                                 </div>
                                 <table class="table table-dark mt-4">
                                     <thead>
@@ -681,6 +680,7 @@
     </footer>
     
     <!-- JS -->
+    <script src="https://www.youtube.com/iframe_api"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>

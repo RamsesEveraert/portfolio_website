@@ -55,3 +55,58 @@ document.addEventListener('DOMContentLoaded', function()
             });
         });
     });
+
+    // video in carousel
+
+    var players = [];
+    var videoPlaying = false;
+
+    function onYouTubeIframeAPIReady() 
+    {
+        var iframes = document.querySelectorAll('.youtube-video');
+        iframes.forEach(function(iframe, index) 
+        {
+            players[index] = new YT.Player(iframe.id, 
+            {
+                events: 
+                {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        });
+    }
+
+    function onPlayerStateChange(event) 
+    {
+        if (event.data == YT.PlayerState.PLAYING) 
+            {
+            videoPlaying = true;
+            $('#carouselExampleCaptions').carousel('pause');
+        } else if (event.data == YT.PlayerState.ENDED){
+            videoPlaying = false;
+            event.target.seekTo(0);
+            event.target.pauseVideo();
+            setTimeout(function()
+            {
+                $('#carouselExampleCaptions').carousel('next');
+            }, 3000);
+        } else if (event.data == YT.PlayerState.PAUSED) {
+            videoPlaying = false;
+            setTimeout(function() 
+            {
+                $('#carouselExampleCaptions').carousel('cycle');
+            }, 3000);
+        }
+    }
+
+    document.addEventListener('DOMContentLoaded', function() {
+        $('#carouselExampleCaptions').on('slid.bs.carousel', function() 
+        {
+            if (!videoPlaying) 
+            {
+                $('#carouselExampleCaptions').carousel({
+                    interval: 20000
+                });
+            }
+        });
+    });
