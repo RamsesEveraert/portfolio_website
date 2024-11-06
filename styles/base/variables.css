@@ -1,12 +1,12 @@
 :root 
 {
     --primaryColor: #dd9933; 
-    --secondaryColor: #1b2021; 
+    --secondaryColor: #1b2021;
     --backgroundColor: #1b2021; 
     --textColor: #eff6e0; 
     --titleColor: #eff6e0;
     --accentColor: #e83f6f;
     --navbarTextColor: #eff6e0;
     --navbarBgColor: #12161a;
-    --cardBackground: #1a1a1a7e; 
+    --cardBackground: #12161abb; 
 }
