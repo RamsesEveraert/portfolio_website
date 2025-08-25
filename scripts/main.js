@@ -122,3 +122,20 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+// YouTube videos stop and reset when a Bootstrap modal is closed
+if (typeof document !== "undefined") {
+  document.addEventListener("hide.bs.modal", (e) => {
+    const modalEl = e.target;
+    if (!modalEl) return;
+    const iframes = modalEl.querySelectorAll("iframe");
+    iframes.forEach((iframe) => {
+      try {
+        const src = iframe.getAttribute("src");
+        if (src) iframe.setAttribute("src", src);
+      } catch (_) {
+        /* no-op */
+      }
+    });
+  });
+}
