@@ -68,7 +68,7 @@
             <div class="container">
                 <div class="row projectDetails">
                     <div class="col-lg-8">
-                        <img src="./videos/ZombieGame.gif" alt="Zombie Game GIF" class="projectGif img-fluid">
+                        <img src="./videos/ZombieGame.gif" alt="Zombie Game GIF" class="projectGif img-fluid" data-gif-duration="6500">
                     </div>
                     <div class="col-lg-4 projectText">
                         <h2>AI Behaviors in Zombie Game</h2>
@@ -289,18 +289,18 @@
                                 <h2>ABOUT THE ASSIGNMENT</h2>
                                 <p>I was assigned to investigate flocking behavior AI in video games. The goal was to spawn as many agents as possible that have the following steering behaviors:</p>
                                 <ul class="custom-list">
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Seek / Flee</li>
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Arrive</li>
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Wander</li>
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Pursuit / Evade</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Seek / Flee</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Arrive</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Wander</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Pursuit / Evade</li>
                                 </ul>
                                 <p>I aimed to combine these steering behaviors to create an AI that moves agents effectively.</p>
                                 <p>Because many agents with individual behaviors can cause performance loss (frame rate drop), I needed to use spatial partitioning. This technique divides space into multiple sub-spaces or partitions to aid in data processing and reduce unnecessary calculations.</p>
                                 <p>In this project, I'm using flat partitioning with the following characteristics:</p>
                                 <ul class="custom-list">
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Uniform grid</li>
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Constant memory size</li>
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Cheap updates</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Uniform grid</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Constant memory size</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Cheap updates</li>
                                 </ul>
                                 <p>This project will be updated to use hierarchical partitioning with a tree structure for more performance-efficient techniques.</p>
                                 <a href="https://github.com/RamsesEveraert/FlockingBehaviors">Link to Github page for this project</a>
@@ -458,9 +458,9 @@
                                 <p>In this project, we were provided with a zombie minigame by our teachers, which included various elements such as randomly spawned zombies, instant-kill purge zones, and randomly spawned houses containing items. The objective of the assignment was to develop an AI that maximizes the survival time of our agent .</p>
                                 <p>The AI needed to:</p>
                                 <ul class="custom-list">
-                                    <li><i class="fas fa-solid fa-chevron-right"></i>Automatically explore the game world</li>
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Efficiently handle enemies</li>
-                                    <li><i class="fas fa-solid fa-chevron-right"></i> Strategically manage items by picking them up and using them at the right moments</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i>Automatically explore the game world</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Efficiently handle enemies</li>
+                                    <li><i class="fa-solid fa-chevron-right"></i> Strategically manage items by picking them up and using them at the right moments</li>
                                 </ul>
                                 <p>Through this project, I applied my skills in AI development and strategic problem-solving to create an AI agent capable of surviving in a dynamic and hostile environment.</p>
                                 <a href="https://github.com/RamsesEveraert/ZombieGame">Link to Github page for this project</a>
@@ -618,6 +618,6 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-    <script src="scripts/main.js"></script>
+    <script  type="module" src="scripts/main.js"></script>
 </body>
 </html>
