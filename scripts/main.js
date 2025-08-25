@@ -1,5 +1,6 @@
 /*---------------------------------------------- Carousel Section -------------------------------------------------*/
 
+// Return the Bootstrap Carousel for #carouselExampleCaptions if available; otherwise null.
 function getCarouselInstance() {
   const element = document.getElementById("carouselExampleCaptions");
   if (element && window.bootstrap && window.bootstrap.Carousel) {
@@ -13,6 +14,7 @@ function getCarouselInstance() {
 let players = [];
 let videoPlaying = false;
 
+// YouTube IFrame API callback: instantiate players for .youtube-video and attach state handlers.
 window.onYouTubeIframeAPIReady = function () {
   const iframes = document.querySelectorAll(".youtube-video");
   players = [];
@@ -27,6 +29,7 @@ window.onYouTubeIframeAPIReady = function () {
   });
 };
 
+// Sync carousel with YouTube player state: pause on play; reset+advance on end; resume after pause.
 function onPlayerStateChange(event) {
   const carouselInstance = getCarouselInstance();
   if (!event || !carouselInstance || !window.YT || !window.YT.PlayerState) return;
@@ -56,6 +59,7 @@ function onPlayerStateChange(event) {
 
 /*---------------------------------------------- General Section -------------------------------------------------*/
 
+// Initialize interactive behavior after DOM ready (EmailJS, carousel, contact form, filters, modal video reset).
 document.addEventListener("DOMContentLoaded", () => {
 
 // Initialize EmailJS only if the library and init() are available
@@ -121,10 +125,9 @@ document.addEventListener("DOMContentLoaded", () => {
       });
     });
   }
-});
 
 // YouTube videos stop and reset when a Bootstrap modal is closed
-if (typeof document !== "undefined") {
+
   document.addEventListener("hide.bs.modal", (e) => {
     const modalEl = e.target;
     if (!modalEl) return;
@@ -134,8 +137,9 @@ if (typeof document !== "undefined") {
         const src = iframe.getAttribute("src");
         if (src) iframe.setAttribute("src", src);
       } catch (_) {
-        /* no-op */
+        
       }
     });
   });
-}
+
+});
